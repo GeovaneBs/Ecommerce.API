@@ -1,0 +1,9 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Geovane\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Geovane\\.nuget\\packages",
+      "D:\\Visual Studio\\Componentes\\NuGetPackages"
+    ]
+  }
+}
