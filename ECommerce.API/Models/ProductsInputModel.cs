@@ -5,10 +5,11 @@ using System.Threading.Tasks;
 
 namespace ECommerce.API.Models
 {
-    public class ProductsModel
+    public class ProductsInputModel
     {
-        public ProductsModel(string description, decimal price)
+        public ProductsInputModel(int id, string description, decimal price)
         {
+            Id = id;
             Description = description;
             Price = price;
         }

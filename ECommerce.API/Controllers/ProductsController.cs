@@ -1,4 +1,5 @@
-﻿using ECommerce.API.Persistence;
+﻿using ECommerce.API.Models;
+using ECommerce.API.Persistence;
 
 using Microsoft.AspNetCore.Mvc;
 
@@ -31,12 +32,63 @@ namespace ECommerce.API.Controllers
         {
             var product = _ecommerceDbContext.Products.SingleOrDefault(p => p.Id == id);
 
-            if(product == null)
+            if (product == null)
             {
                 return NotFound();
             }
 
             return Ok(product);
+        }
+
+        [HttpPost]
+        public IActionResult Post([FromBody] ProductsInputModel productsInputModel)
+        {
+            if (productsInputModel == null)
+            {
+                return BadRequest();
+            }
+
+            var product = new ProductsModel(productsInputModel.Description, productsInputModel.Price);
+
+            _ecommerceDbContext.Products.Add(product);
+            _ecommerceDbContext.SaveChanges();
+
+            return CreatedAtAction(nameof(GetById), new { id = product.Id }, product);
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult Put([FromBody] ProductsInputModel productsInputModel, int id)
+        {
+            var product = _ecommerceDbContext.Products.SingleOrDefault(p => p.Id == id);
+
+            if (product == null)
+            {
+                return BadRequest();
+            }
+
+            product.Description = productsInputModel.Description;
+            product.Price = productsInputModel.Price;
+
+            _ecommerceDbContext.SaveChanges();
+
+            return NoContent();
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            var product = _ecommerceDbContext.Products.SingleOrDefault(p => p.Id == id);
+
+            if (product == null)
+            {
+                return BadRequest();
+            }
+
+            _ecommerceDbContext.Products.Remove(product);
+
+            _ecommerceDbContext.SaveChanges();
+
+            return NoContent();
         }
     }
 }
