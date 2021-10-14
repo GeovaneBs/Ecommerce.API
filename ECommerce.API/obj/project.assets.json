@@ -737,7 +737,7 @@
   },
   "packageFolders": {
     "C:\\Users\\Geovane\\.nuget\\packages\\": {},
-    "D:\\Visual Studio\\Componentes\\NuGetPackages": {}
+    "D:\\Visual Studio\\componentes\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -749,7 +749,7 @@
       "outputPath": "D:\\Projetos\\ECommerce.API\\ECommerce.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Visual Studio\\Componentes\\NuGetPackages"
+        "D:\\Visual Studio\\componentes\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\Geovane\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -810,7 +810,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

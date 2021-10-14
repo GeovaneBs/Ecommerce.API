@@ -19,6 +19,7 @@ namespace ECommerce.API.Controllers
         {
             _ecommerceDbContext = eCommerceDbContext;
         }
+
         // api/products
         [HttpGet]
         public IActionResult Get()

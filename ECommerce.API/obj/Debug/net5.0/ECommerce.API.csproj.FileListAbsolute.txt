@@ -22,7 +22,6 @@ D:\Projetos\ECommerce.API\ECommerce.API\obj\Debug\net5.0\staticwebassets\ECommer
 D:\Projetos\ECommerce.API\ECommerce.API\obj\Debug\net5.0\staticwebassets\ECommerce.API.StaticWebAssets.xml
 D:\Projetos\ECommerce.API\ECommerce.API\obj\Debug\net5.0\scopedcss\bundle\ECommerce.API.styles.css
 D:\Projetos\ECommerce.API\ECommerce.API\obj\Debug\net5.0\ECommerce.API.RazorTargetAssemblyInfo.cache
-D:\Projetos\ECommerce.API\ECommerce.API\obj\Debug\net5.0\ECommerce.API.csproj.CopyComplete
 D:\Projetos\ECommerce.API\ECommerce.API\obj\Debug\net5.0\ECommerce.API.dll
 D:\Projetos\ECommerce.API\ECommerce.API\obj\Debug\net5.0\ref\ECommerce.API.dll
 D:\Projetos\ECommerce.API\ECommerce.API\obj\Debug\net5.0\ECommerce.API.pdb
